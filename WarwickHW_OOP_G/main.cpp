@@ -62,7 +62,12 @@ int main() {
     today->setMonth(4);
     today->setYear(2022);
     
-    std::cout << "Today is: " << *today << std::endl;
+    std::cout << "Today is: " << *nDate << std::endl;
+    
+    tPtr<Date> date = today;
+    
+    std::cout << &today << std::endl;
+    std::cout << &date << std::endl;
     
     return 0;
 }
